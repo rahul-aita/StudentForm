@@ -70,28 +70,38 @@ const AddUser = () => {
             />
           </div>
           <div className="form-group">
-            <input
-              type="text"
+          <label for="cars">Choose a subject:</label>
+  <select name="subject" id="subject"   type="text"
               className="form-control form-control-lg"
               placeholder="Enter Your subject Name"
-              name="subject"
+            
               value={subject}
-              onChange={e => onInputChange(e)}
-            />
+              onChange={e => onInputChange(e)}>
+               <option select="select">select</option>
+    <option value="math">math</option>
+    <option value="pysics">pysics</option>
+    <option value="chemistry">chemistry</option>
+    <option value="English">English</option>
+  </select>
           </div>
             <div className="form-group">
-            <input
-              type="text"
+            <label for="gender">Choose a gender:</label>
+  <select name="gender" id="gender"   type="text"
               className="form-control form-control-lg"
               placeholder="Enter Your gender "
-              name="gender"
+            
               value={gender}
-              onChange={e => onInputChange(e)}
-            />
+              onChange={e => onInputChange(e)}>
+                <option select="select">select</option>
+    <option value="male">male</option>
+    <option value="female">female</option>
+    
+  </select>
+           
           </div>
           <div className="form-group">
             <input
-              type="text"
+              type="file" id="myFile"
               className="form-control form-control-lg"
               placeholder="Enter Your photo"
               name="photo"
@@ -99,7 +109,7 @@ const AddUser = () => {
               onChange={e => onInputChange(e)}
             />
           </div>
-          <button className="btn btn-primary btn-block">Add User</button>
+          <button className="btn btn-secondary btn-block">Add User</button>
         </form>
       </div>
     </div>

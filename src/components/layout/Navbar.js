@@ -2,7 +2,7 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
         <Link className="navbar-brand" href="/">
           Recat User
@@ -39,7 +39,7 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <Link className="btn btn-outline-light" to="/users/add">Add User</Link>
+        <Link className="btn btn-outline-light bg-secondary" to="/users/add">Add User</Link>
       </div>
     </nav>
   );
